@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>The Owner's Rep Playbook — Run Your Renovation Like a Professional</title>
+<meta name="description" content="55 AI prompts that turn a homeowner into a working owner's rep. Hire smart. Run the project. Save 10–15% on a $100K+ renovation." />
+<link rel="canonical" href="https://beteshjosh.gumroad.com/l/akfsez" />
+<meta property="og:title" content="The Owner's Rep Playbook — Run Your Renovation Like a Professional" />
+<meta property="og:description" content="55 AI prompts. Hire smart. Run the project. Save 10–15% on a $100K+ renovation." />
+<meta property="og:type" content="product" />
+<meta property="og:url" content="https://beteshjosh.gumroad.com/l/akfsez" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Owner's Rep Playbook" />
+<meta name="twitter:description" content="55 AI prompts that turn a homeowner into a working owner's rep." />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        fontFamily: {
+          display: ['"Fraunces"','ui-serif','Georgia','serif'],
+          sans:    ['"Inter"','ui-sans-serif','system-ui','sans-serif'],
+          mono:    ['"JetBrains Mono"','ui-monospace','SFMono-Regular','Menlo','monospace'],
+        },
+        colors: {
+          paper:  { 50:'#fcf8ef', 100:'#f5efe0', 200:'#e9dfc6' },
+          ink:    { 700:'#3a3833', 800:'#26241f', 900:'#181712', 950:'#0d0c09' },
+          navy:   { 500:'#2a4866', 600:'#1e3a5f', 700:'#15304f', 800:'#0e2742' },
+          brass:  { 500:'#b58447', 600:'#a47139', 700:'#8b5d2e' },
+        },
+        letterSpacing: { tightest: '-0.04em' },
+      },
+    },
+  };
+</script>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+  :root { color-scheme: light dark; }
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  body { font-feature-settings: "ss01","cv11"; }
+
+  .display { font-family: "Fraunces", ui-serif, Georgia, serif; font-optical-sizing: auto; letter-spacing: -0.025em; }
+  .display-tight { letter-spacing: -0.035em; }
+
+  .eyebrow {
+    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600;
+  }
+
+  .rule { height:1px; background: currentColor; opacity:.10; }
+
+  .section-num {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  .reveal { opacity: 0; transform: translateY(10px); transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity:1; transform:none; transition:none; } }
+
+  /* Blueprint grid backdrop */
+  .blueprint {
+    background-image:
+      linear-gradient(rgba(30,58,95,.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(30,58,95,.07) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .dark .blueprint {
+    background-image:
+      linear-gradient(rgba(181,132,71,.10) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(181,132,71,.10) 1px, transparent 1px);
+  }
+
+  .brass-underline {
+    background-image: linear-gradient(transparent 70%, rgba(181,132,71,.32) 70%);
+    background-size: 100% 100%;
+  }
+
+  .card {
+    border: 1px solid rgba(24,23,18,.08);
+    background: rgba(255,255,255,.55);
+    backdrop-filter: blur(2px);
+  }
+  .dark .card {
+    border-color: rgba(252,248,239,.08);
+    background: rgba(24,23,18,.40);
+  }
+
+  /* Architectural drawing line lattice for prompt box */
+  .draftline {
+    background-image: linear-gradient(rgba(30,58,95,.06) 1px, transparent 1px);
+    background-size: 100% 28px;
+  }
+  .dark .draftline {
+    background-image: linear-gradient(rgba(252,248,239,.07) 1px, transparent 1px);
+  }
+
+  :where(a, button, summary, [tabindex]):focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #1e3a5f, 0 0 0 5px rgba(30,58,95,.18);
+    border-radius: 6px;
+  }
+
+  @keyframes drift { from { transform: translateX(0) } to { transform: translateX(-50%) } }
+  .drift { animation: drift 70s linear infinite; }
+  @media (prefers-reduced-motion: reduce) { .drift { animation: none; } }
+
+  .asterism::after { content: "·"; margin: 0 .6rem; opacity:.4; }
+  .asterism:last-child::after { content: ""; }
+
+  .chip {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 11px; letter-spacing: .04em;
+    border: 1px solid currentColor; color: rgba(24,23,18,.55);
+    padding: 2px 8px; border-radius: 999px;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .dark .chip { color: rgba(252,248,239,.55); }
+
+  /* Dimension line decoration */
+  .dim-line { display:flex; align-items:center; gap:8px; font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.08em; opacity:.55; }
+  .dim-line::before, .dim-line::after { content:""; flex:1; height:1px; background:currentColor; opacity:.4; }
+</style>
+</head>
+
+<body class="bg-paper-50 text-ink-900 dark:bg-ink-950 dark:text-paper-50 font-sans antialiased selection:bg-navy-600/20">
+
+<!-- NAV -->
+<header class="sticky top-0 z-40 bg-paper-50/85 dark:bg-ink-950/80 backdrop-blur supports-[backdrop-filter]:bg-paper-50/65 dark:supports-[backdrop-filter]:bg-ink-950/65 border-b border-ink-900/5 dark:border-paper-50/10">
+  <nav class="max-w-6xl mx-auto px-6 sm:px-10 h-[68px] flex items-center justify-between" aria-label="Primary">
+    <a href="#top" class="flex items-center gap-2.5 group">
+      <span aria-hidden="true" class="grid place-items-center w-7 h-7 rounded-sm border border-ink-900/15 dark:border-paper-50/20">
+        <!-- ruler / dimension icon -->
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="6" rx="1"/><path d="M7 9v3M11 9v4M15 9v3M19 9v4"/></svg>
+      </span>
+      <span class="display text-[15px] font-semibold tracking-tightest">Owner's Rep Playbook</span>
+      <span class="section-num text-ink-700/55 dark:text-paper-50/45 hidden sm:inline">№&nbsp;002</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-sm text-ink-700/80 dark:text-paper-50/70">
+      <a href="#inside" class="hover:text-ink-900 dark:hover:text-paper-50 transition-colors">Inside</a>
+      <a href="#sample" class="hover:text-ink-900 dark:hover:text-paper-50 transition-colors">Sample</a>
+      <a href="#math" class="hover:text-ink-900 dark:hover:text-paper-50 transition-colors">The Math</a>
+      <a href="#faq" class="hover:text-ink-900 dark:hover:text-paper-50 transition-colors">FAQ</a>
+    </div>
+    <div class="flex items-center gap-2">
+      <button id="theme-toggle" type="button" aria-label="Toggle dark mode" class="inline-flex items-center justify-center w-9 h-9 rounded-full border border-ink-900/10 dark:border-paper-50/15 hover:bg-ink-900/5 dark:hover:bg-paper-50/5 transition-colors">
+        <svg class="hidden dark:block" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="block dark:hidden" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z"/></svg>
+      </button>
+      <a href="https://beteshjosh.gumroad.com/l/akfsez" class="hidden sm:inline-flex items-center gap-2 rounded-full bg-ink-900 dark:bg-paper-50 text-paper-50 dark:text-ink-900 text-[13px] font-semibold px-4 h-9 hover:opacity-90 transition-opacity">
+        Get the Playbook
+      </a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="top" class="relative overflow-hidden">
+  <div class="absolute inset-0 blueprint opacity-60 [mask-image:radial-gradient(ellipse_70%_55%_at_50%_40%,black,transparent_85%)]" aria-hidden="true"></div>
+
+  <div class="relative max-w-6xl mx-auto px-6 sm:px-10 pt-20 sm:pt-28 pb-16 sm:pb-24">
+    <div class="flex items-center gap-3 reveal">
+      <span class="eyebrow text-brass-600 dark:text-brass-500">Manual № 002 · for homeowners</span>
+      <span class="hidden sm:block flex-1 rule"></span>
+      <span class="section-num hidden sm:inline text-ink-700/55 dark:text-paper-50/45">issue 001 · summer 2026</span>
+    </div>
+
+    <h1 class="display display-tight mt-8 text-[44px] sm:text-[68px] lg:text-[84px] font-[600] leading-[0.98] reveal">
+      Run a major renovation<br/>
+      like a <span class="brass-underline">professional</span><br/>
+      <span class="text-ink-700/70 dark:text-paper-50/55 italic font-[500]">owner's rep.</span>
+    </h1>
+
+    <div class="mt-10 grid lg:grid-cols-12 gap-10 items-end reveal" style="transition-delay:.05s">
+      <p class="lg:col-span-7 text-lg sm:text-xl leading-[1.55] text-ink-700/90 dark:text-paper-50/75 max-w-2xl">
+        Hire smart. Run the project. Save 10–15% on your reno. Fifty-five AI prompts that turn a sharp homeowner into a working owner's rep — the kind contractors don't try to game.
+      </p>
+      <div class="lg:col-span-5 lg:pl-10 lg:border-l border-ink-900/10 dark:border-paper-50/10">
+        <div class="flex items-baseline gap-3">
+          <span class="display text-5xl font-[600]">$27</span>
+          <span class="text-sm text-ink-700/60 dark:text-paper-50/55">one-time · instant PDF</span>
+        </div>
+        <div class="mt-5 flex flex-wrap gap-3">
+          <a href="https://beteshjosh.gumroad.com/l/akfsez" class="inline-flex items-center gap-2 rounded-full bg-navy-600 hover:bg-navy-700 text-paper-50 text-sm font-semibold px-5 h-11 transition-colors">
+            I want this
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#sample" class="inline-flex items-center gap-2 rounded-full border border-ink-900/15 dark:border-paper-50/20 text-sm font-semibold px-5 h-11 hover:bg-ink-900/5 dark:hover:bg-paper-50/5 transition-colors">
+            Read a sample
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16 sm:mt-24 flex flex-wrap items-center gap-y-3 text-[13px] text-ink-700/70 dark:text-paper-50/55 reveal" style="transition-delay:.1s">
+      <span class="asterism">55 prompts</span>
+      <span class="asterism">13 project phases</span>
+      <span class="asterism">14 pages</span>
+      <span class="asterism">$100K+ renovations</span>
+      <span class="asterism">ChatGPT &amp; Claude</span>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto px-6 sm:px-10"><div class="rule text-ink-900 dark:text-paper-50"></div></div>
+
+<!-- PHASE DRIFT -->
+<section class="overflow-hidden py-7" aria-hidden="true">
+  <div class="drift flex gap-10 whitespace-nowrap text-[13px] text-ink-700/55 dark:text-paper-50/40 w-max font-mono">
+    <span>Project setup</span><span>·</span>
+    <span>Budget &amp; scope</span><span>·</span><span>Splurge vs. save</span><span>·</span>
+    <span>GC sourcing</span><span>·</span><span>Reference calls</span><span>·</span><span>Red flags</span><span>·</span>
+    <span>Bid review</span><span>·</span><span>Apples-to-apples</span><span>·</span><span>Decode lingo</span><span>·</span>
+    <span>Contract terms</span><span>·</span><span>Payment schedule</span><span>·</span><span>Lien waivers</span><span>·</span>
+    <span>Cost tracking</span><span>·</span><span>Draw reviews</span><span>·</span><span>Contingency burn</span><span>·</span>
+    <span>Schedule</span><span>·</span><span>Long-lead items</span><span>·</span><span>Delay claims</span><span>·</span>
+    <span>Daily walkthroughs</span><span>·</span><span>Phase-end checks</span><span>·</span>
+    <span>Change orders</span><span>·</span><span>Push back</span><span>·</span><span>Track against contingency</span><span>·</span>
+    <span>Permits &amp; inspections</span><span>·</span><span>Selections</span><span>·</span><span>Material specs</span><span>·</span>
+    <span>Punch list</span><span>·</span><span>Final walkthrough</span><span>·</span><span>Warranty</span><span>·</span>
+    <span>Common scams</span><span>·</span>
+    <!-- duplicate -->
+    <span>Project setup</span><span>·</span>
+    <span>Budget &amp; scope</span><span>·</span><span>Splurge vs. save</span><span>·</span>
+    <span>GC sourcing</span><span>·</span><span>Reference calls</span><span>·</span><span>Red flags</span><span>·</span>
+    <span>Bid review</span><span>·</span><span>Apples-to-apples</span><span>·</span><span>Decode lingo</span><span>·</span>
+    <span>Contract terms</span><span>·</span><span>Payment schedule</span><span>·</span><span>Lien waivers</span><span>·</span>
+    <span>Cost tracking</span><span>·</span><span>Draw reviews</span><span>·</span><span>Contingency burn</span><span>·</span>
+    <span>Schedule</span><span>·</span><span>Long-lead items</span><span>·</span><span>Delay claims</span><span>·</span>
+    <span>Daily walkthroughs</span><span>·</span><span>Phase-end checks</span><span>·</span>
+    <span>Change orders</span><span>·</span><span>Push back</span><span>·</span><span>Track against contingency</span><span>·</span>
+    <span>Permits &amp; inspections</span><span>·</span><span>Selections</span><span>·</span><span>Material specs</span><span>·</span>
+    <span>Punch list</span><span>·</span><span>Final walkthrough</span><span>·</span><span>Warranty</span><span>·</span>
+    <span>Common scams</span><span>·</span>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto px-6 sm:px-10"><div class="rule text-ink-900 dark:text-paper-50"></div></div>
+
+<!-- STATS / BY THE NUMBERS -->
+<section class="max-w-6xl mx-auto px-6 sm:px-10 py-20 sm:py-28">
+  <div class="flex items-center gap-3 reveal mb-12">
+    <span class="section-num text-ink-700/55 dark:text-paper-50/45">№ 02 / by the numbers</span>
+    <span class="flex-1 rule"></span>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
+    <div class="reveal">
+      <div class="display text-6xl sm:text-7xl font-[600] leading-none">55</div>
+      <div class="mt-3 text-sm text-ink-700/70 dark:text-paper-50/55">prompts, every phase</div>
+    </div>
+    <div class="reveal" style="transition-delay:.05s">
+      <div class="display text-6xl sm:text-7xl font-[600] leading-none">13</div>
+      <div class="mt-3 text-sm text-ink-700/70 dark:text-paper-50/55">project phases covered</div>
+    </div>
+    <div class="reveal" style="transition-delay:.10s">
+      <div class="display text-6xl sm:text-7xl font-[600] leading-none">10–15<span class="text-3xl text-ink-700/55 dark:text-paper-50/45 font-sans align-baseline">%</span></div>
+      <div class="mt-3 text-sm text-ink-700/70 dark:text-paper-50/55">typical reno savings target</div>
+    </div>
+    <div class="reveal" style="transition-delay:.15s">
+      <div class="display text-6xl sm:text-7xl font-[600] leading-none">$5–10<span class="text-3xl text-ink-700/55 dark:text-paper-50/45 font-sans align-baseline">K</span></div>
+      <div class="mt-3 text-sm text-ink-700/70 dark:text-paper-50/55">what an owner's rep would cost you</div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto px-6 sm:px-10"><div class="rule text-ink-900 dark:text-paper-50"></div></div>
+
+<!-- WHAT'S INSIDE -->
+<section id="inside" class="max-w-6xl mx-auto px-6 sm:px-10 py-20 sm:py-28">
+  <div class="flex items-center gap-3 reveal mb-12">
+    <span class="section-num text-ink-700/55 dark:text-paper-50/45">№ 03 / the playbook</span>
+    <span class="flex-1 rule"></span>
+  </div>
+
+  <div class="grid lg:grid-cols-12 gap-12 items-start">
+    <div class="lg:col-span-5 reveal">
+      <h2 class="display display-tight text-4xl sm:text-5xl font-[600] leading-[1.05]">Thirteen phases. The whole project, end to end.</h2>
+      <p class="mt-5 text-ink-700/80 dark:text-paper-50/65 leading-relaxed max-w-md">A real owner's rep doesn't have a magic skill. They have a checklist for every phase, the right questions for every meeting, and a paper trail that contractors can't game. So does this playbook.</p>
+    </div>
+
+    <ul class="lg:col-span-7 divide-y divide-ink-900/10 dark:divide-paper-50/10 border-y border-ink-900/10 dark:border-paper-50/10">
+      <li class="grid grid-cols-[40px_1fr_auto] items-baseline gap-x-6 py-5 reveal">
+        <span class="section-num text-ink-700/55 dark:text-paper-50/45">01</span>
+        <div>
+          <div class="display text-xl font-[600]">Project setup &amp; planning</div>
+          <p class="mt-1 text-sm text-ink-700/70 dark:text-paper-50/60">Budget, scope, splurge-vs-save decisions, contingency sizing.</p>
+        </div>
+        <span class="chip">04 prompts</span>
+      </li>
+      <li class="grid grid-cols-[40px_1fr_auto] items-baseline gap-x-6 py-5 reveal">
+        <span class="section-num text-ink-700/55 dark:text-paper-50/45">02</span>
+        <div>
+          <div class="display text-xl font-[600]">GC selection &amp; vetting</div>
+          <p class="mt-1 text-sm text-ink-700/70 dark:text-paper-50/60">Sourcing, reference calls, red flags, license &amp; insurance checks.</p>
+        </div>
+        <span class="chip">06 prompts</span>
+      </li>
+      <li class="grid grid-cols-[40px_1fr_auto] items-baseline gap-x-6 py-5 reveal">
+        <span class="section-num text-ink-700/55 dark:text-paper-50/45">03</span>
+        <div>
+          <div class="display text-xl font-[600]">Bid review &amp; scope of work</div>
+          <p class="mt-1 text-sm text-ink-700/70 dark:text-paper-50/60">Apples-to-apples comparison, decode contractor lingo, find what's missing.</p>
+        </div>
+        <span class="chip">05 prompts</span>
+      </li>
+      <li class="grid grid-cols-[40px_1fr_auto] items-baseline gap-x-6 py-5 reveal">
+        <span class="section-num text-ink-700/55 dark:text-paper-50/45">04</span>
+        <div>
+          <div class="display text-xl font-[600]">Contract terms &amp; negotiation</div>
+          <p class="mt-1 text-sm text-ink-700/70 dark:text-paper-50/60">Critical clauses, payment schedule, lien waivers, retainage.</p>
+        </div>
+        <span class="chip">05 prompts</span>
+      </li>
+      <li class="grid grid-cols-[40px_1fr_auto] items-baseline gap-x-6 py-5 reveal">
+        <span class="section-num text-ink-700/55 dark:text-paper-50/45">05</span>
+        <div>
+          <div class="display text-xl font-[600]">Cost tracking &amp; budget management</div>
+          <p class="mt-1 text-sm text-ink-700/70 dark:text-paper-50/60">Budget tracker, draw reviews, contingency burn rate.</p>
+        </div>
+        <span class="chip">04 prompts</span>
+      </li>
+      <li class="grid grid-cols-[40px_1fr_auto] items-baseline gap-x-6 py-5 reveal">
+        <span class="section-num text-ink-700/55 dark:text-paper-50/45">06</span>
+        <div>
+          <div class="display text-xl font-[600]">Schedule management</div>
+          <p class="mt-1 text-sm text-ink-700/70 dark:text-paper-50/60">Long-lead items, weekly look-aheads, delay claims.</p>
+        </div>
+        <span class="chip">04 prompts</span>
+      </li>
+      <li class="grid grid-cols-[40px_1fr_auto] items-baseline gap-x-6 py-5 reveal">
+        <span class="section-num text-ink-700/55 dark:text-paper-50/45">07</span>
+        <div>
+          <div class="display text-xl font-[600]">Quality control &amp; inspections</div>
+          <p class="mt-1 text-sm text-ink-700/70 dark:text-paper-50/60">Daily walkthroughs, phase-end checks, what to photograph.</p>
+        </div>
+        <span class="chip">04 prompts</span>
+      </li>
+      <li class="grid grid-cols-[40px_1fr_auto] items-baseline gap-x-6 py-5 reveal">
+        <span class="section-num text-brass-600">08</span>
+        <div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="display text-xl font-[600]">Change order management</span>
+            <span class="eyebrow rounded-full px-2 py-[3px] bg-brass-500/10 text-brass-600">Highest leverage</span>
+          </div>
+          <p class="mt-1 text-sm text-ink-700/70 dark:text-paper-50/60">Evaluate, push back, track against contingency. Where most projects bleed.</p>
+        </div>
+        <span class="chip border-brass-600 text-brass-600">06 prompts</span>
+      </li>
+      <li class="grid grid-cols-[40px_1fr_auto] items-baseline gap-x-6 py-5 reveal">
+        <span class="section-num text-ink-700/55 dark:text-paper-50/45">09</span>
+        <div>
+          <div class="display text-xl font-[600]">Communication &amp; conflict resolution</div>
+          <p class="mt-1 text-sm text-ink-700/70 dark:text-paper-50/60">Escalation, mediation paths, written-record discipline.</p>
+        </div>
+        <span class="chip">04 prompts</span>
+      </li>
+      <li class="grid grid-cols-[40px_1fr_auto] items-baseline gap-x-6 py-5 reveal">
+        <span class="section-num text-ink-700/55 dark:text-paper-50/45">10</span>
+        <div>
+          <div class="display text-xl font-[600]">Permits, inspections &amp; compliance</div>
+          <p class="mt-1 text-sm text-ink-700/70 dark:text-paper-50/60">What needs a permit, who pulls it, what gets inspected when.</p>
+        </div>
+        <span class="chip">03 prompts</span>
+      </li>
+      <li class="grid grid-cols-[40px_1fr_auto] items-baseline gap-x-6 py-5 reveal">
+        <span class="section-num text-ink-700/55 dark:text-paper-50/45">11</span>
+        <div>
+          <div class="display text-xl font-[600]">Selections &amp; material specs</div>
+          <p class="mt-1 text-sm text-ink-700/70 dark:text-paper-50/60">Allowances, decision deadlines, the spec-vs-substitution trap.</p>
+        </div>
+        <span class="chip">04 prompts</span>
+      </li>
+      <li class="grid grid-cols-[40px_1fr_auto] items-baseline gap-x-6 py-5 reveal">
+        <span class="section-num text-ink-700/55 dark:text-paper-50/45">12</span>
+        <div>
+          <div class="display text-xl font-[600]">Punch list &amp; closeout</div>
+          <p class="mt-1 text-sm text-ink-700/70 dark:text-paper-50/60">Final walkthrough, warranty docs, holdback release.</p>
+        </div>
+        <span class="chip">03 prompts</span>
+      </li>
+      <li class="grid grid-cols-[40px_1fr_auto] items-baseline gap-x-6 py-5 reveal">
+        <span class="section-num text-ink-700/55 dark:text-paper-50/45">13</span>
+        <div>
+          <div class="display text-xl font-[600]">Common scams &amp; pitfalls</div>
+          <p class="mt-1 text-sm text-ink-700/70 dark:text-paper-50/60">What to never sign. What to never wire. What to never trust.</p>
+        </div>
+        <span class="chip">03 prompts</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto px-6 sm:px-10"><div class="rule text-ink-900 dark:text-paper-50"></div></div>
+
+<!-- SAMPLE PROMPT -->
+<section id="sample" class="max-w-6xl mx-auto px-6 sm:px-10 py-20 sm:py-28">
+  <div class="flex items-center gap-3 reveal mb-12">
+    <span class="section-num text-ink-700/55 dark:text-paper-50/45">№ 04 / specimen</span>
+    <span class="flex-1 rule"></span>
+  </div>
+
+  <div class="grid lg:grid-cols-12 gap-12 items-start">
+    <div class="lg:col-span-4 reveal">
+      <h2 class="display display-tight text-4xl sm:text-5xl font-[600] leading-[1.05]">The change-order<br/><span class="italic text-ink-700/70 dark:text-paper-50/55">audit prompt.</span></h2>
+      <p class="mt-5 text-ink-700/80 dark:text-paper-50/65 leading-relaxed">Change orders are where 60% of cost overruns come from. This is the prompt that turns "the contractor said it's $9,400 to add an outlet" into a defensible decision.</p>
+
+      <dl class="mt-8 space-y-4 text-sm">
+        <div class="flex gap-4">
+          <dt class="section-num text-ink-700/55 dark:text-paper-50/45 shrink-0 w-12">role</dt>
+          <dd>Owner's rep, 20 years in residential renovation.</dd>
+        </div>
+        <div class="flex gap-4">
+          <dt class="section-num text-ink-700/55 dark:text-paper-50/45 shrink-0 w-12">format</dt>
+          <dd>One-page verdict with push-back script.</dd>
+        </div>
+        <div class="flex gap-4">
+          <dt class="section-num text-ink-700/55 dark:text-paper-50/45 shrink-0 w-12">tone</dt>
+          <dd>Firm. Reasonable. Paper-trail-ready.</dd>
+        </div>
+        <div class="flex gap-4">
+          <dt class="section-num text-ink-700/55 dark:text-paper-50/45 shrink-0 w-12">draft</dt>
+          <dd>~60 seconds in ChatGPT or Claude.</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="lg:col-span-8 reveal" style="transition-delay:.05s">
+      <figure class="card rounded-md overflow-hidden">
+        <figcaption class="flex items-center justify-between px-5 py-3 border-b border-ink-900/10 dark:border-paper-50/10 text-[11px]">
+          <div class="flex items-center gap-3 font-mono text-ink-700/70 dark:text-paper-50/55">
+            <span class="eyebrow text-brass-600">Change orders</span>
+            <span>change-order-audit.prompt</span>
+          </div>
+          <button id="copy-btn" type="button" class="inline-flex items-center gap-1.5 rounded-full border border-ink-900/15 dark:border-paper-50/20 px-2.5 py-[3px] text-ink-700/70 dark:text-paper-50/65 hover:bg-ink-900/5 dark:hover:bg-paper-50/5 transition-colors">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+            <span id="copy-label">Copy</span>
+          </button>
+        </figcaption>
+        <pre id="sample-prompt" class="draftline px-6 py-5 text-[14px] leading-[28px] font-mono whitespace-pre-wrap text-ink-900 dark:text-paper-50 max-h-[500px] overflow-auto">You are a senior owner's rep with 20 years on residential renovations.
+
+My contractor submitted change order [CO#] on project [PROJECT]:
+  • Description: [WHAT THEY'RE PROPOSING]
+  • Reason given: [THEIR JUSTIFICATION]
+  • Price: $[AMOUNT]
+  • Schedule impact: [DAYS]
+
+Original contract scope reference: [QUOTE THE RELEVANT LINE]
+
+Audit this change order. Tell me:
+  1. Is the work actually outside the original scope, or should it
+     have been included? Cite the contract language.
+  2. Is the price reasonable? Break it down: labor hrs × rate,
+     materials, markup. Flag anything north of 20% overhead/profit.
+  3. Is the schedule impact realistic, or padding?
+  4. The three questions I should ask the contractor before signing.
+  5. A counter-offer if one's appropriate.
+
+Then draft a one-paragraph written response I can send. Tone:
+firm but professional. No emotion. Paper trail.</pre>
+      </figure>
+      <p class="mt-3 text-xs text-ink-700/55 dark:text-paper-50/45">1 of 55. Every phase has prompts engineered just as carefully.</p>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto px-6 sm:px-10"><div class="rule text-ink-900 dark:text-paper-50"></div></div>
+
+<!-- WHY IT PAYS — THE MATH -->
+<section id="math" class="max-w-6xl mx-auto px-6 sm:px-10 py-20 sm:py-28">
+  <div class="flex items-center gap-3 reveal mb-12">
+    <span class="section-num text-ink-700/55 dark:text-paper-50/45">№ 05 / the math</span>
+    <span class="flex-1 rule"></span>
+  </div>
+
+  <div class="grid lg:grid-cols-12 gap-12 items-start">
+    <div class="lg:col-span-5 reveal">
+      <h2 class="display display-tight text-4xl sm:text-5xl font-[600] leading-[1.05]">What an owner's rep saves you — and what they cost.</h2>
+      <p class="mt-5 text-ink-700/80 dark:text-paper-50/65 leading-relaxed">A professional owner's rep on a $200K–$500K renovation typically charges $5,000–$10,000. Their job is simple: stop the bleed from contractor games, padded change orders, soft schedules, and missed line items.</p>
+      <p class="mt-4 text-ink-700/80 dark:text-paper-50/65 leading-relaxed">If you can run the role yourself with the right system, you keep what they would have charged — and you save more than they would have saved you, because you're the one who actually cares.</p>
+    </div>
+
+    <div class="lg:col-span-7 reveal" style="transition-delay:.05s">
+      <div class="card rounded-md p-8">
+        <div class="dim-line mb-6">a typical $300K reno</div>
+        <ul class="space-y-5 text-sm leading-[1.7]">
+          <li class="grid grid-cols-[1fr_auto] gap-6 items-baseline">
+            <div>
+              <div class="display text-base font-[600]">Average contractor overcharge on a single change order</div>
+              <div class="text-ink-700/65 dark:text-paper-50/55">Industry data on padded labor + markup.</div>
+            </div>
+            <div class="font-mono text-right">$2,400</div>
+          </li>
+          <li class="grid grid-cols-[1fr_auto] gap-6 items-baseline">
+            <div>
+              <div class="display text-base font-[600]">Typical # of change orders on a $300K reno</div>
+              <div class="text-ink-700/65 dark:text-paper-50/55">Most projects: 8–15.</div>
+            </div>
+            <div class="font-mono text-right">12</div>
+          </li>
+          <li class="grid grid-cols-[1fr_auto] gap-6 items-baseline">
+            <div>
+              <div class="display text-base font-[600]">Total bleed if you don't audit each one</div>
+              <div class="text-ink-700/65 dark:text-paper-50/55">12 × $2,400 of padding, mostly unchallenged.</div>
+            </div>
+            <div class="font-mono text-right">~$28,800</div>
+          </li>
+          <li class="grid grid-cols-[1fr_auto] gap-6 items-baseline">
+            <div>
+              <div class="display text-base font-[600]">Hiring an owner's rep on a $300K reno</div>
+              <div class="text-ink-700/65 dark:text-paper-50/55">3% of project cost, typical retainer.</div>
+            </div>
+            <div class="font-mono text-right">~$9,000</div>
+          </li>
+          <li class="grid grid-cols-[1fr_auto] gap-6 items-baseline pt-4 border-t border-ink-900/10 dark:border-paper-50/10">
+            <div>
+              <div class="display text-base font-[600] text-brass-600">Running it yourself with this playbook</div>
+              <div class="text-ink-700/65 dark:text-paper-50/55">If even one prompt saves one bad change order, the math is already done.</div>
+            </div>
+            <div class="font-mono text-right text-brass-600 font-bold">$27</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto px-6 sm:px-10"><div class="rule text-ink-900 dark:text-paper-50"></div></div>
+
+<!-- HOW IT WORKS -->
+<section class="max-w-6xl mx-auto px-6 sm:px-10 py-20 sm:py-28">
+  <div class="flex items-center gap-3 reveal mb-12">
+    <span class="section-num text-ink-700/55 dark:text-paper-50/45">№ 06 / how it works</span>
+    <span class="flex-1 rule"></span>
+  </div>
+
+  <div class="grid lg:grid-cols-12 gap-12 items-start">
+    <div class="lg:col-span-4 reveal">
+      <h2 class="display display-tight text-4xl sm:text-5xl font-[600] leading-[1.05]">Three steps.<br/>Then your contractor stops trying.</h2>
+    </div>
+    <ol class="lg:col-span-8 grid sm:grid-cols-3 gap-px bg-ink-900/10 dark:bg-paper-50/10 border border-ink-900/10 dark:border-paper-50/10 rounded-md overflow-hidden">
+      <li class="bg-paper-50 dark:bg-ink-950 p-8 reveal">
+        <span class="section-num text-brass-600">Step 01</span>
+        <h3 class="display text-2xl font-[600] mt-3">Open the right phase.</h3>
+        <p class="mt-3 text-sm text-ink-700/70 dark:text-paper-50/60 leading-relaxed">Project just starting? Open Bid Review. Got a sketchy change order? Open Section 08. The playbook is organized like your project, not like a textbook.</p>
+      </li>
+      <li class="bg-paper-50 dark:bg-ink-950 p-8 reveal" style="transition-delay:.05s">
+        <span class="section-num text-brass-600">Step 02</span>
+        <h3 class="display text-2xl font-[600] mt-3">Paste, swap, send.</h3>
+        <p class="mt-3 text-sm text-ink-700/70 dark:text-paper-50/60 leading-relaxed">Copy the prompt into ChatGPT or Claude. Fill in your project details. Hit send. ~60 seconds for a draft you can act on.</p>
+      </li>
+      <li class="bg-paper-50 dark:bg-ink-950 p-8 reveal" style="transition-delay:.10s">
+        <span class="section-num text-brass-600">Step 03</span>
+        <h3 class="display text-2xl font-[600] mt-3">Use the output.</h3>
+        <p class="mt-3 text-sm text-ink-700/70 dark:text-paper-50/60 leading-relaxed">Send the email. Make the call. Sign — or don't sign — the change order. Every prompt ends with something concrete to do.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto px-6 sm:px-10"><div class="rule text-ink-900 dark:text-paper-50"></div></div>
+
+<!-- WHO IT'S FOR -->
+<section class="max-w-6xl mx-auto px-6 sm:px-10 py-20 sm:py-28">
+  <div class="flex items-center gap-3 reveal mb-12">
+    <span class="section-num text-ink-700/55 dark:text-paper-50/45">№ 07 / who it's for</span>
+    <span class="flex-1 rule"></span>
+  </div>
+
+  <div class="grid lg:grid-cols-12 gap-12 items-start">
+    <h2 class="lg:col-span-5 display display-tight text-4xl sm:text-5xl font-[600] leading-[1.05] reveal">For homeowners who refuse to be the easiest customer the contractor has ever had.</h2>
+    <dl class="lg:col-span-7 grid sm:grid-cols-2 gap-x-10 gap-y-8 reveal" style="transition-delay:.05s">
+      <div>
+        <dt class="display text-xl font-[600]">First-time renovators</dt>
+        <dd class="mt-2 text-sm text-ink-700/75 dark:text-paper-50/60 leading-relaxed">You've never done this. Your contractor has done it a hundred times. The playbook closes that gap.</dd>
+      </div>
+      <div>
+        <dt class="display text-xl font-[600]">Luxury renovations ($500K+)</dt>
+        <dd class="mt-2 text-sm text-ink-700/75 dark:text-paper-50/60 leading-relaxed">More money means more line items where things go quietly sideways. The math gets more important, not less.</dd>
+      </div>
+      <div>
+        <dt class="display text-xl font-[600]">Out-of-town owners</dt>
+        <dd class="mt-2 text-sm text-ink-700/75 dark:text-paper-50/60 leading-relaxed">You can't walk the site every day. The weekly-review prompts replace 80% of what you'd see in person.</dd>
+      </div>
+      <div>
+        <dt class="display text-xl font-[600]">Small developers (1–3 projects)</dt>
+        <dd class="mt-2 text-sm text-ink-700/75 dark:text-paper-50/60 leading-relaxed">No full-time PM yet. This is how you run multiple projects without a $200K hire.</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto px-6 sm:px-10"><div class="rule text-ink-900 dark:text-paper-50"></div></div>
+
+<!-- BUY -->
+<section id="buy" class="max-w-6xl mx-auto px-6 sm:px-10 py-20 sm:py-28">
+  <div class="flex items-center gap-3 reveal mb-12">
+    <span class="section-num text-ink-700/55 dark:text-paper-50/45">№ 08 / get it</span>
+    <span class="flex-1 rule"></span>
+  </div>
+
+  <div class="grid lg:grid-cols-12 gap-12 items-end">
+    <div class="lg:col-span-7 reveal">
+      <h2 class="display display-tight text-5xl sm:text-6xl lg:text-7xl font-[600] leading-[1.02]">
+        The Owner's Rep Playbook
+      </h2>
+      <p class="mt-6 max-w-xl text-lg text-ink-700/80 dark:text-paper-50/65 leading-[1.55]">
+        Pays for itself with the first change order you don't sign blind.
+      </p>
+      <ul class="mt-8 grid sm:grid-cols-2 gap-y-3 gap-x-8 text-sm text-ink-700/80 dark:text-paper-50/65">
+        <li class="flex gap-3"><span class="text-brass-600">—</span> 55 prompts, every phase</li>
+        <li class="flex gap-3"><span class="text-brass-600">—</span> 13 sections, organized like your project</li>
+        <li class="flex gap-3"><span class="text-brass-600">—</span> Instant PDF download</li>
+        <li class="flex gap-3"><span class="text-brass-600">—</span> Works with ChatGPT &amp; Claude</li>
+        <li class="flex gap-3"><span class="text-brass-600">—</span> Free updates (tools coming)</li>
+        <li class="flex gap-3"><span class="text-brass-600">—</span> One-time price</li>
+      </ul>
+    </div>
+
+    <div class="lg:col-span-5 reveal" style="transition-delay:.05s">
+      <div class="card rounded-md p-8">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <div class="eyebrow text-ink-700/55 dark:text-paper-50/45">Today</div>
+            <div class="mt-2 flex items-baseline gap-2">
+              <span class="display text-6xl font-[600] leading-none">$27</span>
+              <span class="text-sm text-ink-700/60 dark:text-paper-50/50">USD · one-time</span>
+            </div>
+          </div>
+          <span class="chip">PDF · 14 pp</span>
+        </div>
+        <div class="my-7 rule text-ink-900 dark:text-paper-50"></div>
+        <a
+          href="https://beteshjosh.gumroad.com/l/akfsez"
+          class="w-full inline-flex items-center justify-center gap-2 rounded-full bg-navy-600 hover:bg-navy-700 text-paper-50 text-sm font-semibold h-12 transition-colors">
+          I want this
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <p class="mt-3 text-center text-[11px] text-ink-700/55 dark:text-paper-50/45">Secure checkout via Gumroad · Instant download</p>
+        <div class="mt-7 grid grid-cols-3 text-center divide-x divide-ink-900/10 dark:divide-paper-50/10">
+          <div class="px-2"><div class="display font-[600] text-xl">55</div><div class="eyebrow text-ink-700/55 dark:text-paper-50/45 mt-1">prompts</div></div>
+          <div class="px-2"><div class="display font-[600] text-xl">13</div><div class="eyebrow text-ink-700/55 dark:text-paper-50/45 mt-1">phases</div></div>
+          <div class="px-2"><div class="display font-[600] text-xl">~60s</div><div class="eyebrow text-ink-700/55 dark:text-paper-50/45 mt-1">per draft</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto px-6 sm:px-10"><div class="rule text-ink-900 dark:text-paper-50"></div></div>
+
+<!-- FAQ -->
+<section id="faq" class="max-w-4xl mx-auto px-6 sm:px-10 py-20 sm:py-28">
+  <div class="flex items-center gap-3 reveal mb-12">
+    <span class="section-num text-ink-700/55 dark:text-paper-50/45">№ 09 / questions</span>
+    <span class="flex-1 rule"></span>
+  </div>
+  <h2 class="display display-tight text-4xl sm:text-5xl font-[600] leading-[1.05] reveal">Frequently<br/>asked.</h2>
+
+  <div class="mt-12 divide-y divide-ink-900/10 dark:divide-paper-50/10 border-y border-ink-900/10 dark:border-paper-50/10">
+    <details class="group py-6 reveal">
+      <summary class="flex items-center justify-between cursor-pointer list-none gap-6">
+        <span class="display text-xl font-[600]">My project is only $100K — is this overkill?</span>
+        <span class="grid place-items-center w-8 h-8 rounded-full border border-ink-900/15 dark:border-paper-50/20 transition group-open:rotate-45 shrink-0">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+        </span>
+      </summary>
+      <p class="mt-4 pr-12 text-ink-700/80 dark:text-paper-50/65 leading-[1.7]">No. The math gets better at smaller project sizes. A $100K reno has less contingency to absorb a bad change order, so each prompt earns more. Use the GC vetting, bid review, change order, and punch-list sections — skip what doesn't apply.</p>
+    </details>
+    <details class="group py-6 reveal">
+      <summary class="flex items-center justify-between cursor-pointer list-none gap-6">
+        <span class="display text-xl font-[600]">Do I need ChatGPT Plus or Claude Pro?</span>
+        <span class="grid place-items-center w-8 h-8 rounded-full border border-ink-900/15 dark:border-paper-50/20 transition group-open:rotate-45 shrink-0">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+        </span>
+      </summary>
+      <p class="mt-4 pr-12 text-ink-700/80 dark:text-paper-50/65 leading-[1.7]">No. Free tiers handle every prompt in this playbook. Paid tiers will be slightly faster on the long contract-review prompts.</p>
+    </details>
+    <details class="group py-6 reveal">
+      <summary class="flex items-center justify-between cursor-pointer list-none gap-6">
+        <span class="display text-xl font-[600]">What about the tools? You mention bid leveling and a weekly report.</span>
+        <span class="grid place-items-center w-8 h-8 rounded-full border border-ink-900/15 dark:border-paper-50/20 transition group-open:rotate-45 shrink-0">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+        </span>
+      </summary>
+      <p class="mt-4 pr-12 text-ink-700/80 dark:text-paper-50/65 leading-[1.7]">The PDF with 55 prompts is what you get today. The bid-leveling spreadsheet, weekly owner report template, and change-order log are coming as free updates — your Gumroad library updates automatically.</p>
+    </details>
+    <details class="group py-6 reveal">
+      <summary class="flex items-center justify-between cursor-pointer list-none gap-6">
+        <span class="display text-xl font-[600]">Will my contractor be insulted that I'm using AI?</span>
+        <span class="grid place-items-center w-8 h-8 rounded-full border border-ink-900/15 dark:border-paper-50/20 transition group-open:rotate-45 shrink-0">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+        </span>
+      </summary>
+      <p class="mt-4 pr-12 text-ink-700/80 dark:text-paper-50/65 leading-[1.7]">They won't know. The outputs read like a thoughtful owner who's done their homework. Good contractors respect that. The ones who don't are the ones you most need a playbook for.</p>
+    </details>
+    <details class="group py-6 reveal">
+      <summary class="flex items-center justify-between cursor-pointer list-none gap-6">
+        <span class="display text-xl font-[600]">Refunds?</span>
+        <span class="grid place-items-center w-8 h-8 rounded-full border border-ink-900/15 dark:border-paper-50/20 transition group-open:rotate-45 shrink-0">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+        </span>
+      </summary>
+      <p class="mt-4 pr-12 text-ink-700/80 dark:text-paper-50/65 leading-[1.7]">If the playbook doesn't save you something in your first week of use, reply to the receipt email and you'll get your money back.</p>
+    </details>
+  </div>
+
+  <div class="mt-16 text-center reveal">
+    <a href="https://beteshjosh.gumroad.com/l/akfsez" class="inline-flex items-center gap-2 rounded-full bg-navy-600 hover:bg-navy-700 text-paper-50 text-sm font-semibold px-6 h-12 transition-colors">
+      Get the Playbook — <span>$27</span>
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-ink-900/10 dark:border-paper-50/10">
+  <div class="max-w-6xl mx-auto px-6 sm:px-10 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px] text-ink-700/65 dark:text-paper-50/50">
+    <div class="flex items-center gap-2.5">
+      <span aria-hidden="true" class="grid place-items-center w-6 h-6 rounded-sm border border-ink-900/15 dark:border-paper-50/20">
+        <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="6" rx="1"/><path d="M7 9v3M11 9v4M15 9v3M19 9v4"/></svg>
+      </span>
+      <span class="display font-[600]">The Owner's Rep Playbook</span>
+    </div>
+    <div class="flex items-center gap-5">
+      <a href="#inside" class="hover:text-ink-900 dark:hover:text-paper-50">Inside</a>
+      <a href="#sample" class="hover:text-ink-900 dark:hover:text-paper-50">Sample</a>
+      <a href="#faq" class="hover:text-ink-900 dark:hover:text-paper-50">FAQ</a>
+      <a href="https://beteshjosh.gumroad.com/l/akfsez" class="hover:text-ink-900 dark:hover:text-paper-50">Buy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Dark mode — system preference, in-memory toggle
+  (function () {
+    var root = document.documentElement;
+    var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+    if (mq && mq.matches) root.classList.add('dark');
+    var btn = document.getElementById('theme-toggle');
+    if (btn) btn.addEventListener('click', function () { root.classList.toggle('dark'); });
+    if (mq && mq.addEventListener) mq.addEventListener('change', function (e) {
+      root.classList.toggle('dark', e.matches);
+    });
+  })();
+
+  // Reveal on scroll
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+
+  // Copy sample prompt
+  (function () {
+    var btn = document.getElementById('copy-btn');
+    var label = document.getElementById('copy-label');
+    var pre = document.getElementById('sample-prompt');
+    if (!btn || !pre) return;
+    btn.addEventListener('click', function () {
+      var text = pre.innerText;
+      var done = function () { label.textContent = 'Copied'; setTimeout(function () { label.textContent = 'Copy'; }, 1500); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done).catch(function () {
+          var ta = document.createElement('textarea');
+          ta.value = text; document.body.appendChild(ta); ta.select();
+          try { document.execCommand('copy'); } catch (e) {}
+          document.body.removeChild(ta); done();
+        });
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta); done();
+      }
+    });
+  })();
+</script>
+</body>
+</html>
